@@ -1,2 +1,14 @@
-# leyla-abkeh-lawyer
-سایت وکالت لیلا آبکه 
+# Leyla Abkeh — React + Vite + Tailwind site
+
+Run:
+
+```
+npm install
+npm run dev
+```
+
+Build:
+
+```
+npm run build
+```

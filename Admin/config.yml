@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # اگر شاخه اصلیت master هست، اینجا عوضش کن
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "وبلاگ"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "عنوان", name: "title", widget: "string" }
+      - { label: "تاریخ", name: "date", widget: "datetime" }
+      - { label: "متن", name: "body", widget: "markdown" }
